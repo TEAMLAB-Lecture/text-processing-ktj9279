@@ -63,13 +63,8 @@ def no_vowels(input_string):
             ''W lv Pythn!'
     """
 
-    no_vowel_string = []
     stop_char_list = ['a', 'e', 'i', 'o', 'u']
 
-    for c in input_string:
-        if c not in stop_char_list:
-            no_vowel_string.append()
-
-    no_vowel_string = ''.join(no_vowel_string)
+    no_vowel_string = ''.join([c for c in input_string if c not in stop_char_list])
 
     return no_vowel_string
